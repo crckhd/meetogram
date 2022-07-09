@@ -1,13 +1,30 @@
 services:
-  web:
-    build: .
+
+  client:
+    build: ../client/
     ports:
       - "8000:5000"
     volumes:
-      - .:/app
+      - ../client/dist/:/app
     links:
-      - redis
-  redis:
-    image: redis
-volumes:
-  logvolume01: {}
+      - db
+      - server
+
+  server:
+    build: ../server/
+    ports:
+      - "80:8080"
+    volumes:
+      - ../server/:/server
+    links:
+      - client
+      - db
+
+  db:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: toor
+    ports:
+      - "8081:8081"
