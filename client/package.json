@@ -5,8 +5,7 @@
 	"repository": "git@gitlab.com:meetogram/meetogram.client.git",
 	"author": "crckhd and tr1gada",
 	"scripts": {
-		"build:dev": "",
-		"build:prod": "",
+		"build": "python3 scripts/build.py",
 		"serve": "python3 scripts/serve.py"
 	},
 	"license": "MIT",
