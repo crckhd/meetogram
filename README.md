@@ -2,7 +2,7 @@
 
 <div style="display: flex;">
 <img src="https://github.com/crckhd/Meetogram/actions/workflows/codeql.yml/badge.svg?branch=main">
-<img src="https://github.com/crckhd/Meetogram/actions/workflows/super-linter.yml/badge.svg?branch=main)">
+<img src="https://github.com/crckhd/Meetogram/workflows/Lint%20Code%20Base/badge.svg?branch=main">
 </div>
 
 #### Клиент для приложения Meetogram
