@@ -1,5 +1,7 @@
 # Meetogram.client
 
+[![CodeQL](https://github.com/crckhd/Meetogram/actions/workflows/codeql.yml/badge.svg?branch=main)](https://github.com/crckhd/Meetogram/actions/workflows/codeql.yml)
+
 #### Клиент для приложения Meetogram
 
 Meetogram — это приложение для быстрого общения между командами. Основная идея заключается в том, что один пользователь создает комнату, дает ссылку другим пользователям, и они просто подключаются, нажав на нее. Без регистрации.
