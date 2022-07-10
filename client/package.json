@@ -2,12 +2,12 @@
 	"name": "meetogram.client",
 	"version": "0.0.1",
 	"description": "Клиент для приложения Meetogram",
-	"main": "index.js",
 	"repository": "git@gitlab.com:meetogram/meetogram.client.git",
 	"author": "crckhd and tr1gada",
 	"scripts": {
-		"loader:dev": "parcel public/loader.html",
-		"main:dev": "parcel public/index.html"
+		"build:dev": "",
+		"build:prod": "",
+		"serve": "python3 scripts/serve.py"
 	},
 	"license": "MIT",
 	"devDependencies": {
