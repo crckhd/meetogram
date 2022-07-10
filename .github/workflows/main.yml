@@ -1,0 +1,55 @@
+name: Check For Successful Build
+
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Перейдем на нужную нам ветку в Git
+      - uses: actions/checkout@v3
+      
+      # Установим Python 3.10
+      - name: Setup Python
+        uses: actions/setup-python@v4.0.0
+        with:
+        
+          # Version range or exact version of Python to use, using SemVer's version range syntax. Reads from .python-version if unset.
+          python-version: 3.10
+          
+          # The target architecture (x86, x64) of the Python interpreter.
+          architecture: x64
+      
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.3.0
+        with:
+        
+          # Set always-auth in npmrc.
+          always-auth: false
+          
+          # Version Spec of the version to use. Examples: 12.x, 10.15.1, >=10.15.0.
+          node-version: 16.14.2
+          
+          # Target architecture for Node to use. Examples: x86, x64. Will use system architecture by default.
+          architecture: x64
+          
+          # Used to specify a package manager for caching in the default directory. Supported values: npm, yarn, pnpm.
+          cache: yarn
+          
+          # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
+          cache-dependency-path: yarn.lock
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          yarn
+          yarn build
