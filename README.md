@@ -1,4 +1,4 @@
-# Meetogram.client
+# meetogram
 
 ![Github Icon-3](https://user-images.githubusercontent.com/101672047/178149180-8e5190f1-6fa0-41fd-a3df-04b154c18eb4.png)
 
