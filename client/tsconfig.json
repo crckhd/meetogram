@@ -13,7 +13,7 @@
 	"useDefineForClassFields": true,
 	"moduleDetection": "auto",
 
-    "rootDir": "./src/ts",
+    "rootDir": "./src/typescript",
     "moduleResolution": "node",
     "baseUrl": "./",
 
