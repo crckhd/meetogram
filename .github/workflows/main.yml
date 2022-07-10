@@ -49,5 +49,6 @@ jobs:
       # Собираем проект
       - name: Build a project
         run: |
+          cd ./client
           yarn
           yarn build
