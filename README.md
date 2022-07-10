@@ -1,8 +1,11 @@
 # Meetogram.client
 
+![Github Icon-3](https://user-images.githubusercontent.com/101672047/178149180-8e5190f1-6fa0-41fd-a3df-04b154c18eb4.png)
+
 <div style="display: flex;">
 <img src="https://github.com/crckhd/Meetogram/actions/workflows/codeql.yml/badge.svg?branch=main">
 <img src="https://github.com/crckhd/Meetogram/workflows/Lint%20Code%20Base/badge.svg?branch=main">
+<img src="https://github.com/crckhd/Meetogram/actions/workflows/build-check.yml/badge.svg?branch=main">
 </div>
 
 #### Клиент для приложения Meetogram
