@@ -1,0 +1,20 @@
+{
+  "name": "meetogram-server",
+  "version": "0.1",
+  "description": "Серверная часть для приложения meetogram",
+  "main": "index.js",
+  "scripts": {
+    "serve": "echo Hello!"
+  },
+  "keywords": [
+    "express",
+    "webrtc",
+    "server"
+  ],
+  "author": "crckhd and tr1gada",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.20.0",
+    "prettier": "^2.7.1"
+  }
+}

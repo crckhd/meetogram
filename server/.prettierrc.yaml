@@ -1,0 +1,4 @@
+useTabs: true,
+semi: true,
+arrowParens: false,
+singleAttributePerLine: true
