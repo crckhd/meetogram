@@ -1,53 +1,18 @@
 {
   "compilerOptions": {
-    "composite": true,
-
-    "target": "es2022",
-    "lib": ["dom"],
-    "noLib": true,
-    "module": "commonjs",
-    "rootDir": "./src",
-    "moduleResolution": "node",
-    "baseUrl": "./",
-	
-    "allowJs": false,
-    "sourceMap": true,
-    "outDir": "./dist",
-    "removeComments": true,
-    "noEmit": true,
-    "importHelpers": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
-    "newLine": "crlf",
-    "stripInternal": true,
-    "isolatedModules": false,
-    "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-
-
-    "strict": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "strictBindCallApply": true,
-    "strictPropertyInitialization": true,
-    "noImplicitThis": true,
-    "useUnknownInCatchVariables": true,
-    "alwaysStrict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "exactOptionalPropertyTypes": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "noUncheckedIndexedAccess": true,
-    "noImplicitOverride": true,
-    "noPropertyAccessFromIndexSignature": true,
-    "allowUnusedLabels": false,
-    "allowUnreachableCode": false,
-
-
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+	"target": "commonJS",
+	"typeRoots": [
+	  "node_modules/@types"
+	],
+	"outDir": "dist",
+	"module": "es2015",
+	"moduleResolution": "node",
+	"emitDecoratorMetadata": true,
+	"experimentalDecorators": true,
+	"allowSyntheticDefaultImports": true,
+	"declaration": false,
+	"sourceMap": true,
+	"baseDir": "./",
+	"rootDir": "./src/ts"
   }
 }
