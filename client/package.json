@@ -1,0 +1,25 @@
+{
+  "name": "meetogram-client",
+  "version": "0.1",
+  "description": "Клиентская часть для приложения, по которому можно общаться",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "main": "index.js",
+  "keywords": [
+    "WebRTC",
+    "client"
+  ],
+  "scripts": {
+    "prepare": "cd .. && husky install .husky"
+  },
+  "author": "crckhd and tr1gada",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.30.7",
+    "@typescript-eslint/parser": "^5.30.7",
+    "eslint": "^8.20.0",
+    "husky": "^8.0.1",
+    "parcel": "^2.6.2",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
