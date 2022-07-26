@@ -9,7 +9,9 @@
     "client"
   ],
   "scripts": {
-    "prepare": "cd .. && husky install .husky"
+	  "build": "vite build",
+	  "serve": "vite serve --port 8080",
+	  "preview": "vite preview --port 8081"
   },
   "author": "crckhd and tr1gada",
   "license": "MIT",
