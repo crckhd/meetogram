@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
-	"target": "commonJS",
+	"target": "ES6",
 	"typeRoots": [
 	  "node_modules/@types"
 	],
 	"outDir": "dist",
-	"module": "es2015",
+	"module": "CommonJS",
 	"moduleResolution": "node",
 	"emitDecoratorMetadata": true,
 	"experimentalDecorators": true,
